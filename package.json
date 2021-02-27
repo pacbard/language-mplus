@@ -1,0 +1,38 @@
+{
+    "name": "language-mplus",
+    "displayName": "language-mplus",
+    "description": "Syntax highlighting for Mplus",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "mplus",
+                "aliases": ["Mplus.inp", "mplus"],
+                "extensions": [".inp"]
+            },
+            {
+                "id": "mplus_out",
+                "aliases": ["Mplus.out", "mplus"],
+                "extensions": [".out"]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "mplus",
+                "scopeName": "source.mplus",
+                "path": "./syntaxes/Mplus_inp.tmLanguage"
+            },
+            {
+                "language": "mplus_out",
+                "scopeName": "source.mplus_out",
+                "path": "./syntaxes/Mplus_out.tmLanguage"
+            }
+    ]
+    }
+}

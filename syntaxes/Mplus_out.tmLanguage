@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>Mplus.out</string>
+    <key>scopeName</key>
+    <string>source.mplus_out</string>
+    <key>fileTypes</key>
+    <array>
+      <string>out</string>
+    </array>
+    <key>patterns</key>
+    <array>
+      <dict>
+        <key>name</key>
+        <string>constant.numeric.mplus_out</string>
+        <key>match</key>
+        <string>\d+(\.\d+)*</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>entity.name.tag.mplus_out</string>
+        <key>match</key>
+        <string>Estimate|S\.E\.|Est\.\/S\.E\.|Two\-Tailed|P\-Value|H0 Value|H1 Value|Akaike \(AIC\)|Bayesian \(BIC\)|Sample\-Size Adjusted BIC|Value|Degrees of Freedom|RMSEA|CFI|TLI</string>
+      </dict>
+       <dict>
+        <key>name</key>
+        <string>entity.name.function.mplus_out</string>
+        <key>match</key>
+        <string>MODEL FIT INFORMATION|INPUT INSTRUCTIONS|MODEL RESULTS|SUMMARY OF ANALYSIS|STANDARDIZED MODEL RESULTS|R\-SQUARE|TECHNICAL (\d+) OUTPUT|QUALITY OF NUMERICAL RESULTS|MODEL MODIFICATION INDICES</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>variable.language.mplus_out</string>
+        <key>match</key>
+        <string>(Residual Variances|NU|LAMBDA|THETA|ALPHA|BETA|PSI|Variances|Intercepts|Thresholds|Means|Loglikelihood)|Information Criteria|Chi\-Square Test of Model Fit|RMSEA \(Root Mean Square Error Of Approximation\)|CFI\/TLI|Chi\-Square Test of Model Fit|for the Baseline Model|SRMR \(Standardized Root Mean Square Residual\)|WRMR  \(Weighted Root Mean Square Residual\)|Number of Free Parameters|ON/BY Statements|ON Statements|WITH Statements</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>invalid.illegal.mplus_out</string>
+        <key>match</key>
+        <string>(WARNING|ERROR)</string>
+      </dict>
+    </array>
+  </dict>
+</plist>

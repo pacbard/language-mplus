@@ -1,0 +1,21 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: Mplus.out
+scopeName: source.mplus_out
+fileTypes:
+- out
+
+patterns:
+- name: constant.numeric.mplus_out
+  match: \d+(\.\d+)*
+
+- name: entity.name.tag.mplus_out
+  match: Estimate|S\.E\.|Est\.\/S\.E\.|Two\-Tailed|P\-Value|H0 Value|H1 Value|Akaike \(AIC\)|Bayesian \(BIC\)|Sample\-Size Adjusted BIC|Value|Degrees of Freedom|RMSEA|CFI|TLI
+
+- name: entity.name.function.mplus_out
+  match: MODEL FIT INFORMATION|INPUT INSTRUCTIONS|MODEL RESULTS|SUMMARY OF ANALYSIS|STANDARDIZED MODEL RESULTS|R\-SQUARE|TECHNICAL (\d+) OUTPUT|QUALITY OF NUMERICAL RESULTS|MODEL MODIFICATION INDICES
+
+- name: variable.language.mplus_out
+  match: (Residual Variances|NU|LAMBDA|THETA|ALPHA|BETA|PSI|Variances|Intercepts|Thresholds|Means|Loglikelihood)|Information Criteria|Chi\-Square Test of Model Fit|RMSEA \(Root Mean Square Error Of Approximation\)|CFI\/TLI|Chi\-Square Test of Model Fit|for the Baseline Model|SRMR \(Standardized Root Mean Square Residual\)|WRMR  \(Weighted Root Mean Square Residual\)|Number of Free Parameters|ON/BY Statements|ON Statements|WITH Statements
+
+- name: invalid.illegal.mplus_out
+  match: (WARNING|ERROR)
