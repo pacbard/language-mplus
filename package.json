@@ -15,13 +15,23 @@
         "languages": [
             {
                 "id": "mplus",
-                "aliases": ["Mplus.inp", "mplus"],
-                "extensions": [".inp"]
+                "aliases": [
+                    "Mplus.inp",
+                    "mplus"
+                ],
+                "extensions": [
+                    ".inp"
+                ]
             },
             {
                 "id": "mplus_out",
-                "aliases": ["Mplus.out", "mplus"],
-                "extensions": [".out"]
+                "aliases": [
+                    "Mplus.out",
+                    "mplus"
+                ],
+                "extensions": [
+                    ".out"
+                ]
             }
         ],
         "grammars": [
@@ -35,6 +45,6 @@
                 "scopeName": "source.mplus_out",
                 "path": "./syntaxes/Mplus_out.tmLanguage"
             }
-    ]
+        ]
     }
 }
